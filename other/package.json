@@ -1,0 +1,43 @@
+{
+	"name": "@xwp/country-card-block",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Block rendering a card with country information.",
+	"author": "XWP",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"engines": {
+		"node": "16",
+		"npm": ">=8"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"cli:insert-posts": "wp-env run cli wp xwp-country-card insert-posts",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:php": "composer run lint",
+		"lint": "npm run lint:js && npm run lint:php && npm run lint:css",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"env": "wp-env"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "10.1.0",
+		"@wordpress/blocks": "11.17.0",
+		"@wordpress/components": "21.1.0",
+		"@wordpress/data": "7.2.0",
+		"@wordpress/element": "4.16.0",
+		"@wordpress/env": "5.3.0",
+		"@wordpress/eslint-plugin": "13.2.0",
+		"@wordpress/i18n": "4.18.0",
+		"@wordpress/icons": "9.9.0",
+		"@wordpress/prettier-config": "2.1.0",
+		"@wordpress/scripts": "24.2.0",
+		"@wordpress/stylelint-config": "21.1.0",
+		"eslint": "8.23.1",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"sanitize-html": "2.7.2"
+	}
+}
